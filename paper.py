@@ -13,7 +13,7 @@ class ZhiWangPaper(object):
     def __init__(self):
         self.user_input = input('请输入关键词：')
         self.keyword_quote = quote(self.user_input)
-        self.SearchSql = input('请输入关键词的SearchSql：')
+        self.SearchSql = input('请输入关键词的SearchSql：')  # 此SearchSql为第二页的SearchSql
         self.url = 'https://kns.cnki.net/kns8/Brief/GetGridTableHtml'
         self.ua = UserAgent()
         self.headers = {
